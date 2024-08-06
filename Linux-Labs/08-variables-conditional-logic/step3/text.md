@@ -11,6 +11,8 @@ Add in a check that checks for both sshd to be on and httpd to be off.
 ```plain
 if [ $httpdCheck -eq "1" -a $sshdCheck -eq "0" ]; then echo "This system is good"; fi
 ```
+Another approach with Bash syntax, operators  `&&` for AND and `||` for OR can be used:
+- `if [[ httpdCheck -eq 1 ]] && [[ sshdCheck -eq 0 ]]; then echo "OK"; else echo "ERROR"; fi`
 
 If that comes out with your expected output, then break it and see if both of them have to be true. (They do)
 
