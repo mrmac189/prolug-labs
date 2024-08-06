@@ -34,7 +34,7 @@ and also
 ```plain
 set
 ```
-
+---
 Is there any difference between the two above commands? How can you prove it?
 
 We can check the difference with: 
@@ -47,7 +47,7 @@ set | wc -l
 - `set` gives us more lines, it will include all env vars, shell vars and functions
 - `declare -p` gives as a little less lines, it will include all env vars and shell vars
 - `printenv` and `env` are quite the same and will give us only env vars
-
+---
 Test the output of a variable named `$name`
 
 ```plain
@@ -55,6 +55,7 @@ echo $name
 ```
 
 Did that give any output, why or why not?
+- It doesn't exist.
 
 Let's populate that variable with some information
 
