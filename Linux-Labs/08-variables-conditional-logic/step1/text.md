@@ -86,7 +86,14 @@ Can you verify that they're correct? Which one is running and which one is not r
 
 (httpd is not running and sshd is running)
 
+---
+How does syntax `ps -ef | grep -i [s]shd` even work? Why does grep exclude itself?
 
+The trick is quite interesting:
+- For grep the shell resolves regex by giving internally "sshd" as parameter. 
+- However, when grep filters ps results, it still sees [s]shd in process list. And it doesn't match with the resolved name before. 
 
+There is an alternative for that syntax as well:
+- ` ps -ef | grep -i sshd | grep -v grep `
 
 </details>
