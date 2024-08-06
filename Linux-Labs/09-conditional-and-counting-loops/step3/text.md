@@ -32,6 +32,21 @@ Execute the script
 /root/file_create.sh
 ```
 
+- My solution 1:  
+`for server in $(cat /root/servers.txt); do ssh $server 'touch /tmp/file{1..100}'; done`
+- My solution 2:
+```bash
+#!/bin/bash
+
+servers=(node01 controlplane node02)
+
+for server in ${servers[@]}
+do
+  #Using single quotes ' around the inner loop ensures that 
+  #the entire command is executed on the remote server, and not expanded 
+  ssh $server 'for i in $(seq 1 1 100); do touch /tmp/file$i; done'
+done              
+```  
 
 If this works, you can see the files in both locations with this loop.
 
@@ -40,5 +55,6 @@ for server in controlplane node01; do ssh $server 'hostname;ls /tmp/file* | wc -
 ```
 
 Do you see the output you expected? Why or why not?
+
 
 </details>
