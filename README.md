@@ -57,3 +57,11 @@ Labs for killercoda.com that ProLUG has created to facilitate learning of engine
 TBA
 ## Hashicorp Labs 
 TBA
+
+## Changelog 
+- removed {{exec}} tag to make files readable for .md viewers 
+- adding my own notes to most of steps in labs and in separate notes files as well
+- checks in readme to track my own progress in labs
+
+
+**Special thanks to ProLUG for amazing labs!**
