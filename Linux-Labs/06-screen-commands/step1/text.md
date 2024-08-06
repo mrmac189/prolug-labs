@@ -49,7 +49,7 @@ Ctrl A + A
 Create a new window and name it "Window2"
 
 ```plain
-Ctrl A + C
+Ctrl A + c
 Ctrl A + A
 ```
 
