@@ -16,7 +16,7 @@ Check for containerd, if it is installed and running on your system.
 ```plain
 ss -ntulp | grep -i container
 systemctl status containerd --no-pager
-```{{exec}}
+```
 
 Is it there, and is it running?
 
@@ -25,7 +25,7 @@ Check for bzip on your system.
 ```plain
 dpkg -l | grep -i bzip2
 which bzip2
-```{{exec}}
+```
 
 Is bzip2 installed on your system? Can you find the executible?
 
@@ -33,19 +33,19 @@ Remove the unwanted packages
 
 ```plain
 apt -y remove bzip2 containerd
-```{{exec}}
+```
 
 Verify that nothing is running or installed on your system that doesn't meet your system requirements.
 
 ```plain
 ss -ntulp | grep -i container
 systemctl status containerd --no-pager
-```{{exec}}
+```
 
 ```plain
 dpkg -l | grep -i bzip2
 which bzip2
-```{{exec}}
+```
 
 If these are removed, you've cleaned up your system to meet the new requirements.
 

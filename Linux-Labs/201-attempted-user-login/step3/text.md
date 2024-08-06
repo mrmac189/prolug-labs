@@ -18,13 +18,13 @@ All the rest can be left blank, just hit enter.
 
 ```plain
 ssh-keygen
-```{{exec}}
+```
 
 You can verify the new keys with the command below
 
 ```plain
 ls -l /root/.ssh
-```{{exec}}
+```
 
 Note: You created a named file realuser_rsa (private key) and a realuser_rsa.pub (public key)
 
@@ -32,13 +32,13 @@ Push the key file over to realuser@node01 (You will need to use your password fr
 
 ```plain
 ssh-copy-id -i /root/.ssh/realuser_rsa.pub realuser@node01
-```{{exec}}
+```
 
 Test your connection via your private key into realuser@node01.
 
 ```plain
 ssh -i /root/.ssh/realuser_rsa realuser@node01 'hostname; id'
-```{{exec}}
+```
 
 You were able to create and push over a keypair. You then used that keypair to connect to the server as that user.
 

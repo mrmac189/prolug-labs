@@ -11,31 +11,31 @@ Check your connection to node01.
 
 ```plain
 ssh node01
-```{{exec}}
+```
 
 Type in exit to return to the original system
 
 ```plain
 exit
-```{{exec}}
+```
 
 Check system uptime and one layer of debug1.
 
 ```plain
 ssh -v node01 'uptime'
-```{{exec}}
+```
 
 What additional information was shown with the -v option? (debug1)
 
 ```plain
 ssh -vv node01 'uptime'
-```{{exec}}
+```
 
 What additional information was shown with the -vv option? (debug2)
 
 ```plain
 ssh -vvv node01 'uptime' 
-```{{exec}}
+```
 
 What additional information was shown with the -vvv option (debug3)
 

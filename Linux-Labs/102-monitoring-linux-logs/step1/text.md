@@ -14,21 +14,21 @@ Install the required packages and Grafana GPG key.
 
 ```plain
 apt install -y apt-transport-https
-```{{exec}}
+```
 
 ```plain
 apt install -y software-properties-common wget
-```{{exec}}
+```
 
 ```plain
 sudo wget -q -O /usr/share/keyrings/grafana.key https://apt.grafana.com/gpg.key
-```{{exec}}
+```
 
 Add the Grafana repository.
   
 ```plain
 echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
-```{{exec}}
+```
   
 Finally, we're ready to install Grafana:
   
@@ -36,7 +36,7 @@ Finally, we're ready to install Grafana:
 apt update
 # Install the latest Enterprise release:
 apt install -y grafana-enterprise
-```{{exec}}
+```
 
 Now that you've installed Grafana, let's make sure it's started.
 
@@ -44,7 +44,7 @@ Now that you've installed Grafana, let's make sure it's started.
 sudo systemctl daemon-reload
 sudo systemctl start grafana-server
 sudo systemctl status grafana-server --no-pager
-```{{exec}}
+```
 
 Verify that the server is serving on port 3000 (the default port)
 
@@ -52,7 +52,7 @@ Verify that the server is serving on port 3000 (the default port)
 systemctl status grafana-server --no-pager
 ss -ntulp | grep grafana
 ss -ntulp | grep 3000
-```{{exec}}
+```
 
 We can also check that the external Web UI is available and change the default password.
 

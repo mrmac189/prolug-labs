@@ -18,19 +18,19 @@ Install the respository for telegraf.
 wget -q https://repos.influxdata.com/influxdata-archive_compat.key
 echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdata-archive_compat.key' | sha256sum -c && cat influxdata-archive_compat.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
 echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | tee /etc/apt/sources.list.d/influxdata.list
-```{{exec}}
+```
 
 Install telegraf
 
 ```plain
 apt update && apt -y install telegraf
-```{{exec}}
+```
 
 Setup the telegraf configuration file to write to the output producer for influxdb2
 
 ```plain
 vi /etc/telegraf/telegraf.conf
-```{{exec}}
+```
 
 Set the information as follows: (Replace with your url, token, organization, and bucket)
 ```plain
@@ -63,7 +63,7 @@ Restart Telegraf and verify it's writing to InfluxDB2
 ```plain
 systemctl restart telegraf
 systemctl status telegraf --no-pager -l
-```{{exec}}
+```
 
 Look at the output above and verify that telegraf is properly writing out to InfluxDB2.
 

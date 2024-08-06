@@ -12,20 +12,20 @@ Update your apt repository.
 
 ```plain
 apt-get update -y
-```{{exec}}
+```
 
 Install ClamAV.
 
 ```plain
 apt-get install clamav clamav-daemon -y
-```{{exec}}
+```
 
 Verify that you have the binaries on your system.
 
 ```plain
 which clamscan
 which freshclam
-```{{exec}}
+```
 
 Now that you've installed ClamAV, let's move on and go to the next part of the lab.
 

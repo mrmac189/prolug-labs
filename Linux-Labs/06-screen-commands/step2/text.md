@@ -19,13 +19,13 @@ Verify that screen session is still running
 
 ```plain
 screen -ls
-```{{exec}}
+```
 
 Reconnect to that session
 
 ```plain
 screen -r
-```{{exec}}
+```
 
 Kill each window sessions
 
@@ -38,13 +38,13 @@ Create a screen session with logging enabled to /root/screenlog.log
 
 ```plain
 screen -L -Logfile /root/screenlog.log
-```{{exec}}
+```
 
 Execute a command to log it out
 
 ```plain
 for i in $(seq 100); do uptime; sleep 1; done
-```{{exec}}
+```
 
 Detach the screen
 
@@ -55,7 +55,7 @@ Ctrl A + D D
 Check log file
 ```plain
 cat /root/screenlog.log
-```{{exec}}
+```
 
 
 </details>

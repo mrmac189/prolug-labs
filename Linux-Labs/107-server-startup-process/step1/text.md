@@ -16,25 +16,25 @@ First we check what version of Linux we're on and kernel
 ```plain
 cat /etc/*release
 uname -r
-```{{exec}}
+```
 
 We may want to know how the system was called by it's bootloader (Grub)
 
 ```plain
 cat /proc/cmdline
-```{{exec}}
+```
 
 Alternatively we may want to look at the startup inside of dmesg.
 
 ```plain
 dmesg | head -15
-```{{exec}}
+```
 
 Now we may want to check if the system is virtualized, what hardware it has for the NIC and also loaded kernel modules around the networking.
 
 ```plain
 virt-what
-```{{exec}}
+```
 
 Are you on a virtualized system? How can you tell?
 
@@ -42,7 +42,7 @@ What do these commands show?
 
 ```plain
 dmidecode | grep -iE "virt|prod"
-```{{exec}}
+```
 
 What do you see when you just use dmidecode? 
 

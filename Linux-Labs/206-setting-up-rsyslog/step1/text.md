@@ -21,25 +21,25 @@ Verify that rsyslog is installed and running on both systems.
 
 ```plain
 dpkg -l | grep -i rsyslog
-```{{exec}}
+```
 
 ```plain
 ssh node01 'dpkg -l | grep -i rsyslog'
-```{{exec}}
+```
 
 ```plain
 systemctl status rsyslog
-```{{exec}}
+```
 
 ```plain
 ssh node01 'systemctl status rsyslog'
-```{{exec}}
+```
 
 Configure rsyslog on controlplane to capture UDP on the default port 514.
 
 ```plain
 vi /etc/rsyslog.conf
-```{{exec}}
+```
 
 Uncomment the following two lines
 
@@ -54,25 +54,25 @@ You know that systems do not take configuration file changes without a restart o
 
 ```plain
 systemctl restart rsyslog
-```{{exec}}
+```
 
 Verify that your system is listening on port 514 for UDP traffic.
 
 ```plain
 ss -ntulp | grep 514
-```{{exec}}
+```
 
 ssh to node01
 
 ```plain
 ssh node01
-```{{exec}}
+```
 
 Configure the rsyslog daemon on node01
 
 ```plain
 vi /etc/rsyslog.conf
-```{{exec}}
+```
 
 Add the following line at the bottom of the file.
 
@@ -83,19 +83,19 @@ Restart the service
 
 ```plain
 systemctl restart rsyslog
-```{{exec}}
+```
 
 Exit back to controlplane node
 
 ```plain
 exit
-```{{exec}}
+```
 
 Verify that the node01 system logs are being pushed over to controlplane
 
 ```plain
 tail -f /var/log/syslog
-```{{exec}}
+```
 
 You are ready to head to the next part of the lab.
 

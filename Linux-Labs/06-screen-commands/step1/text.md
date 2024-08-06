@@ -15,19 +15,19 @@ Verify your /root/.screenrc file
 
 ```plain
 cat /root/.screenrc
-```{{exec}}
+```
 
 Create a screen session
 
 ```plain
 screen
-```{{exec}}
+```
 
 Verify that you are attached in screen
 
 ```plain
 screen -ls
-```{{exec}}
+```
 
 Split the screen horizontally 
 

@@ -24,20 +24,20 @@ Set the file to executable for root user and root group.
 
 ```plain
 chmod 750 /root/file_create.sh
-```{{exec}}
+```
 
 Execute the script
 
 ```plain
 /root/file_create.sh
-```{{exec}}
+```
 
 
 If this works, you can see the files in both locations with this loop.
 
 ```plain
 for server in controlplane node01; do ssh $server 'hostname;ls /tmp/file* | wc -l'; done
-```{{exec}}
+```
 
 Do you see the output you expected? Why or why not?
 

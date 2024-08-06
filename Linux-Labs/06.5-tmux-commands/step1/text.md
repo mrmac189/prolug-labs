@@ -16,25 +16,25 @@ Install tmux
 
 ```plain
 apt -y install tmux
-```{{exec}}
+```
 
 Verify your /root/.tmux.conf file
 
 ```plain
 cat /root/.tmux.conf
-```{{exec}}
+```
 
 Create a tmux session
 
 ```plain
 tmux
-```{{exec}}
+```
 
 Verify that you are attached in tmux
 
 ```plain
 tmux ls
-```{{exec}}
+```
 
 In Tmux a command usually starts with a prefix key `ctrl+b` and than a key to activate an action.
 

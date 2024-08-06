@@ -16,19 +16,19 @@ Set the script file to be executable.
 
 ```plain
 chmod 755 /answers/clamscan.sh
-```{{exec}}
+```
 
 Verify the permissions
 
 ```plain
 ls -l /answers/clamscan.sh
-```{{exec}}
+```
 
 View the file and see if you can determine what it is doing.
 
 ```plain
 cat /answers/clamscan.sh
-```{{exec}}
+```
 
 How many log files are being created in each run? Why do you you think this is?
 
@@ -40,7 +40,7 @@ This should take between 10 and 15 minutes, so let it run and go grab a drink.
 
 ```plain
 time /answers/clamscan.sh
-```{{exec}}
+```
 
 How long did the script take to run?
 
@@ -52,19 +52,19 @@ Check if cron is running on the server?
 
 ```plain
 systemctl status cron --no-pager
-```{{exec}}
+```
 
 If you want it to run from cron.daily, you would do this.
 
 ```plain
 cp /answers/clamscan.sh /etc/cron.daily/
-```{{exec}}
+```
 
 The other way to set this to run daily, say at 0100 AM local time, would look like this:
 
 ```plain
 crontab -e
-```{{exec}}
+```
 
 Select your editor of choice from the menu.
 
@@ -78,7 +78,7 @@ Check and verify that the crontab is set.
 
 ```plain
 crontab -l
-```{{exec}}
+```
 
 Hit submit to see your lab results.
 

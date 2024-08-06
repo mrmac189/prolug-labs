@@ -12,45 +12,45 @@ There are many ways to give sudo permissions. You can add them directly to the /
 Inspect sudoers file.
 ```plain
 cat /etc/sudoers
-```{{exec}}
+```
 
 Give this file a quick read: Which groups does it say have permissions to "execute any command"?
 
 Let's add our user to that group.
 ```plain
 usermod -a -G sudo baduser
-```{{exec}}
+```
 
 Let's verify that the group information looks correct for our user.
 
 ```plain
 grep baduser /etc/group
-```{{exec}}
+```
 
 Verify sudo permisions that exist for baduser
 ```plain
 sudo -l -U baduser
-```{{exec}}
+```
 
 Let's wait another 60 seconds and see if the logs are showing better output for our user.
 
 ```plain
 sleep 60
-```{{exec}}
+```
 
 Check logs
 
 ```plain
 tail -20 /var/log/auth.log
-```{{exec}}
+```
 
 ```plain
 tail -20 /var/log/syslog
-```{{exec}}
+```
 
 ```plain
 grep baduser /var/log/*
-```{{exec}}
+```
 
 What values are you seeing now in there, in regards to the baduser account and sudo access?
 
@@ -60,6 +60,6 @@ If you want to fix their new 'sudo auth' issue, you have to give baduser a passw
 
 ```plain
 passwd baduser
-```{{exec}}
+```
 
 </details>

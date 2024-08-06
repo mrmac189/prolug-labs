@@ -19,19 +19,19 @@ Go back to node01 to begin configuration
 
 ```plain
 ssh node01
-```{{exec}}
+```
 
 First, make the directories that will be used as document root for each environment.
 
 ```plain
 mkdir /var/www/html_{dev,test,qa}
-```{{exec}}
+```
 
 Now we have to set up the listener for each of those ports
 
 ```plain
 vi /etc/apache2/ports.conf
-```{{exec}}
+```
 
 Add the lines below, below the ` Listen 80 ` line
 
@@ -45,7 +45,7 @@ Next we're going to create a directive for each of those sites. Now this could b
 
 ```plain
 vi /etc/apache2/sites-enabled/testing-team.conf
-```{{exec}}
+```
 
 Add the following information to the file. This may seem like a lot, but it's actually just created by following the directives you can find in the /etc/apache2 directory.
 
@@ -82,7 +82,7 @@ The last step will be to create simple websites in each of the DocumentRoot dire
 
 ```plain
 vi /var/www/html_dev/index.html
-```{{exec}}
+```
 
 Put this information in the page.
 
@@ -95,7 +95,7 @@ Put this information in the page.
 
 ```plain
 vi /var/www/html_test/index.html
-```{{exec}}
+```
 
 Put this information in the page.
 
@@ -108,7 +108,7 @@ Put this information in the page.
 
 ```plain
 vi /var/www/html_qa/index.html
-```{{exec}}
+```
 
 Put this information in the page.
 
@@ -123,7 +123,7 @@ With that all set up, let's restart the server and test our connections
 
 ```plain
 systemctl restart apache2
-```{{exec}}
+```
 
 Let's see if all our ports are being listened to
 
@@ -132,12 +132,12 @@ ss -ntulp | grep 80
 lsof -i :8080
 lsof -i :8081
 lsof -i :8082
-```{{exec}}
+```
 
 Now we run a curl command against each environment in a for loop.
 
 ```plain
 for port in 8080 8081 8082; do curl 127.0.0.1:$port | grep -iE "dev|qa|test"; done
-```{{exec}}
+```
 
 </details>

@@ -17,27 +17,27 @@ Install the InfluxDB2 repository.
 wget -q https://repos.influxdata.com/influxdata-archive_compat.key
 echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdata-archive_compat.key' | sha256sum -c && cat influxdata-archive_compat.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg > /dev/null
 echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | tee /etc/apt/sources.list.d/influxdata.list
-```{{exec}}
+```
 
 Install InfluxDB2
 
 ```plain
 apt-get update && apt-get -y install influxdb2
-```{{exec}}
+```
 
 Start InfluxDB2
 
 ```plain
 systemctl start influxdb      
 systemctl enable influxdb
-```{{exec}}
+```
 
 Verify InfluxDB2 is listening on the correct port.
 
 ```plain
 ss -ntulp | grep 8086
 lsof -i :8086
-```{{exec}}
+```
 
 Connect to InfluxDB, set up your organization, bucket, and token. Copy those pieces of information out to a notepad, you will need them shortly.
 

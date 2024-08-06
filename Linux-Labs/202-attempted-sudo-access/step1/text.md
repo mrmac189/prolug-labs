@@ -10,25 +10,25 @@ User logging may take up to 60 seconds to execute and populate the logs for this
 ```plain
 echo "I am patient and can wait 60 seconds"
 sleep 60
-```{{exec}}
+```
 
 Check the logs where Ubuntu keeps sudo requests. They may take up to 60 seconds to populate with the bad sudo requests.
 
 ```plain
 tail -20 /var/log/auth.log
-```{{exec}}
+```
 
 Also check 
 
 ```plain
 tail -20 /var/log/syslog
-```{{exec}}
+```
 
 You can search all the logs for baduser like this as well.
 
 ```plain
 grep baduser /var/log/*
-```{{exec}}
+```
 
 You will eventually see the line 
 ```plain
@@ -41,7 +41,7 @@ To see root's crontab and how we're causing all the failed sudo attempts, use th
 
 ```plain
 crontab -l
-```{{exec}}
+```
 
 You can see that root is using baduser account to attempt sudo commands that it doesn't yet have permissions to execute.
 
