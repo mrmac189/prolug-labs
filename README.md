@@ -59,9 +59,9 @@ TBA
 TBA
 
 ## Changelog 
-- removed {{exec}} tag to make files readable for .md viewers 
+
 - adding my own notes to most of steps in labs and in separate notes files as well
 - checks in readme to track my own progress in labs
-
+- removed {{exec}} and HTML tags to make files readable for .md viewers and personal usage
 
 **Special thanks to ProLUG for amazing labs!**
