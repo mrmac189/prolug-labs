@@ -67,7 +67,18 @@ node01" >> /root/servers.txt
 ```plain
 for server in $(cat /root/servers.txt); do ssh $server 'hostname; uptime'; done
 ```
+- Alternative, using array:
+```bash
+#!/bin/bash
+  
 
+servers=(node01 controlplane node02)
+
+for server in ${servers[@]}
+do 
+	ssh $server uptime
+done
+```
 Do you see how this may be useful as a systems administrator to hit multiple nodes? Why or why not?
 
 
