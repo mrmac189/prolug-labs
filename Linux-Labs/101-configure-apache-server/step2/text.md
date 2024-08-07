@@ -13,8 +13,8 @@ Make sure each html page exists and has the name dev, test, and qa on the page.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Go back to node01 to begin configuration
 
 ```plain
@@ -140,4 +140,4 @@ Now we run a curl command against each environment in a for loop.
 for port in 8080 8081 8082; do curl 127.0.0.1:$port | grep -iE "dev|qa|test"; done
 ```
 
-</details>
+

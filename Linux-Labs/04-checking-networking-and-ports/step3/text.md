@@ -7,8 +7,8 @@ Create a file /root/ubuntu.pcap with 200 packets that can be read by wireshark l
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Check network throughput to your system for 20 seconds
 ```plain
@@ -34,4 +34,3 @@ Verify the size and creation of the file.
 ls -lh /root/ubuntu.pcap
 ```
 
-</details>

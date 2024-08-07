@@ -3,8 +3,8 @@ Let's look at what system ports are open and what software is running on each of
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 List all the open ports on the system for evaluation.
 
 ```plain
@@ -31,4 +31,3 @@ systemctl cat systemd-resolved
 You can continue this for all the processes, to see what is currently running on one of your systems. This will be useful for you to enumerate so you can verify that you have the same basic functionality on the new servers that you are building.
 
 
-</details>

@@ -9,8 +9,8 @@ Leaving behind processes with tmux
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Detatch from tmux session
 
@@ -82,4 +82,3 @@ Close all tmux sessions
 tmux kill-server
 ```
 
-</details>

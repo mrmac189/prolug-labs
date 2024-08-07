@@ -14,8 +14,8 @@ Test each of these structures with the variables you have from the previous step
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Use the single alternative structure to output whether or not httpd and sshd are running.
 
 ```plain
@@ -48,4 +48,3 @@ Can you do this same thing for the httpdCheck? How do you have to edit it? Can y
 
 You have done some conditional logic in Bash, let's go forward and do some more test logic in the next section.
 
-</details>

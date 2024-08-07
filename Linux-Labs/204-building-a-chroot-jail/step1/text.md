@@ -10,8 +10,8 @@ Change your root to /var/chroot and see what functionality you have.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Create the chroot filesystem.
 
 ```plain
@@ -86,4 +86,3 @@ ping -c 1 www.google.com
 
 Hit submit to move onto the next part of the lab.
 
-</details>

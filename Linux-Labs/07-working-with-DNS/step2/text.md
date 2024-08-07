@@ -9,8 +9,8 @@ Change the order of host lookup in /etc/nsswitch.conf to see the system properly
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 
 ```plain
@@ -62,4 +62,3 @@ curl www.google.com | grep -Ei 'yahoo|google'
 
 If this works, you've successfully changed the order your system resolves names by editing /etc/nsswitch.conf.
 
-</details>

@@ -3,8 +3,8 @@ We believe we have all the correct pieces in place, but now we need test that th
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Create user to test ssh is running in the environment.
 
 ```plain
@@ -49,4 +49,3 @@ Enter the password and then verify that you're in the correct user. Are you stil
 
 Hit submit to finish this lab.
 
-</details>

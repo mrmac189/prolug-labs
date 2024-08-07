@@ -9,8 +9,8 @@ Verify that your system needs to restart and see if there is a newer kernel than
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Upgrade your system
 
 ```plain
@@ -43,4 +43,5 @@ grep vmlinuz /boot/grub/grub.cfg
 
 So you need to think about why the grub.cfg menu has the new version and old (current) version of the kernel in there. This is because we always install a kernel and can fall back in the unlikely condition of a crash when the new kernel comes up.
 
-</details>
+he new kernel comes up.
+

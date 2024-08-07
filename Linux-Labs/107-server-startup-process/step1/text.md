@@ -9,8 +9,8 @@ Use the Solution if you do not know the correct answers.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 First we check what version of Linux we're on and kernel
 
 ```plain
@@ -50,4 +50,3 @@ Anything interesting?
 
 What might you capture from these commands that will help you in building out a new Linux system?
 
-</details>

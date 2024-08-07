@@ -5,8 +5,8 @@ Limit the user down to only the permissions they need.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Remove the user from the sudo group
 
 ```plain
@@ -41,4 +41,3 @@ sudo -l -U baduser
 
 How do these permissions compare with what was given when the baduser was just put in the sudo group. Why might this type of permission be more secure, but harder to maintain? If you've used ansible, how might Ansible help deploy permissions to /etc/sudoers.d/ ?
 
-</details>

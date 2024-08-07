@@ -9,8 +9,8 @@ Create a dashboard (import 159) that shows the telemetry information for your se
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Connect to Grafana and log in {{TRAFFIC_HOST1_3000}}
 
@@ -20,4 +20,4 @@ Import the dashboard 159 to view the metric data.
 
 Verify the dashboard is working properly.
 
-</details>
+

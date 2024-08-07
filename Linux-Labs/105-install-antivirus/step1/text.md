@@ -5,8 +5,8 @@ Install ClamAV
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Update your apt repository.
 
@@ -29,4 +29,3 @@ which freshclam
 
 Now that you've installed ClamAV, let's move on and go to the next part of the lab.
 
-</details>

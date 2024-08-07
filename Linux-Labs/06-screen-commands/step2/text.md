@@ -7,8 +7,8 @@ Create a new screen session with logging enabled to /root/screenlog.log
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Detatch from screen session
 
 ```plain
@@ -58,4 +58,3 @@ cat /root/screenlog.log
 ```
 
 
-</details>

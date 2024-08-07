@@ -12,8 +12,8 @@ Test each of these counting loops and see their behavior.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Create a counting loop over a list of numbers.
 
 ```plain
@@ -83,4 +83,3 @@ Do you see how this may be useful as a systems administrator to hit multiple nod
 
 
 
-</details>

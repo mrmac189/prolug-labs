@@ -5,8 +5,8 @@ Do each command and think about what output you're looking at. You may run them 
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Let's look at the virtual memory usage of this system.
 
 ```plain
@@ -48,4 +48,3 @@ Next we may want to see more CPU and Disk usage on the system in 1 second increm
 iostat -xz 1 5
 ```
 
-</details>

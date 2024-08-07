@@ -5,8 +5,8 @@ Create a script that loops over a list of servers, logs into them, and then crea
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Create a script that connects over ssh to both servers and creates the necessary files. use vi or the text editor of your choice to create this script /root/file_create.sh
 
@@ -57,4 +57,3 @@ for server in controlplane node01; do ssh $server 'hostname;ls /tmp/file* | wc -
 Do you see the output you expected? Why or why not?
 
 
-</details>

@@ -9,8 +9,8 @@ Now, we may not always do this activity like this in the enterprise, but the pie
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check if the user exists on both servers
 
 ```plain
@@ -63,4 +63,3 @@ ssh node01 'grep Invalid /var/log/auth.log'
 
 You'll still see errors with the login, but now at least the realuser is no longer Invalid. We'll fix their login in the next section.
 
-</details>

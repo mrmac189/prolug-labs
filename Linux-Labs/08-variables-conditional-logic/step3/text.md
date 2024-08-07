@@ -3,8 +3,8 @@ Now that you've done some basic decision logic, let's add in inclusive "or" and 
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Add in a check that checks for both sshd to be on and httpd to be off.
 
@@ -25,4 +25,3 @@ if [ $httpdCheck -eq "1" -o $sshdCheck -eq "1" ]; then echo "This system is good
 
 Can you break this one? Does it matter if one or the other is true, or does only one have to be true for this to evaluate to true? (Only one is needed in the inclusive "or")
 
-</details>

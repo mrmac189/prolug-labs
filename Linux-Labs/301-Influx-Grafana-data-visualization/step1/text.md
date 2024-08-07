@@ -11,8 +11,8 @@ Deploy Grafana and ensure that it is running on your server.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
   
 Refer to the [Grafana Docs](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) for latest installation instructions.
 
@@ -68,4 +68,4 @@ Change the password. Default User: admin and Password: admin
 
 Feel free to look around in the Web UI and then continue on to the next part of the lab.
 
-</details>
+

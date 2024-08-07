@@ -9,8 +9,8 @@ Place 10,000 files called file{1..10000} in /root directory
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check the overall current disk space
 
 ```plain
@@ -47,4 +47,3 @@ df -i /
 ```
 
 
-</details>

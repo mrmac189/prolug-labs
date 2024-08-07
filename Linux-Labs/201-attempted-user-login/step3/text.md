@@ -9,8 +9,8 @@ Test and see that you are that user.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Create a key in the root account that we can push over to node01 and authenticate with
 
 This will be interactive, choose file to save the key /root/.ssh/realuser_rsa
@@ -42,4 +42,3 @@ ssh -i /root/.ssh/realuser_rsa realuser@node01 'hostname; id'
 
 You were able to create and push over a keypair. You then used that keypair to connect to the server as that user.
 
-</details>

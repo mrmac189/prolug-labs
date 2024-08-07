@@ -9,8 +9,8 @@ Verify the current state of the UFW.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 SSH over to node01 and check UFW settings.
 
 ```plain
@@ -55,4 +55,3 @@ ufw status verbose
 What is the difference between those two outputs? Why might you want to use one or the other?
 
 
-</details>

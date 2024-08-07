@@ -9,8 +9,8 @@ Create multiple tmux panes and windows, rename them, and move between them.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Install tmux
 
@@ -82,4 +82,3 @@ Move with your arrow keys and press `enter` to select your window.
 ctrl+b and w
 ```
 
-</details>

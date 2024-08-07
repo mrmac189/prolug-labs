@@ -11,8 +11,8 @@ Look to see if there are any ssl packages that need to be updated.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Verify when the system was last patched.
 
 ```plain
@@ -75,4 +75,3 @@ apt list --upgradable | grep -i ssl
 
 Do you see any packages with ssl that need to be upgraded?
 
-</details>

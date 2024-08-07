@@ -9,8 +9,8 @@ Verify that telegraf is running and pushing data into InfluxDB2
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Install the respository for telegraf.
 
@@ -67,4 +67,3 @@ systemctl status telegraf --no-pager -l
 
 Look at the output above and verify that telegraf is properly writing out to InfluxDB2.
 
-</details>

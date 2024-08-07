@@ -9,8 +9,8 @@ Make the node01:/share to /mnt a permanent setting in /etc/fstab.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Install the nfs-common client
 
 ```plain
@@ -70,4 +70,3 @@ ls -l /mnt/finalcheck
 
 If that's all worked, then the system is correctly set up.
 
-</details>

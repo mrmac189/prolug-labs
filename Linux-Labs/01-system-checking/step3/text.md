@@ -5,8 +5,8 @@ Do each command and think about what output you're looking at. You may run them 
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Let's look at the network usage and load of the system.
 
 ```plain
@@ -26,4 +26,3 @@ Do we appear to be seeing any large numbers of errors? Why might retransmits be 
 
 - Number  of  RPC  requests  per second, those which needed to be retransmitted (for example because of a server timeout).
 
-</details>

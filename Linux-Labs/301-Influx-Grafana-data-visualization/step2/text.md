@@ -9,8 +9,8 @@ Setup an organization, bucket, and token. Collect and copy your data toke from t
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Install the InfluxDB2 repository.
 
 ```plain
@@ -47,4 +47,3 @@ Connect to InfluxDB, set up your organization, bucket, and token. Copy those pie
 
 Once this is complete you have completed this section of the lab.
 
-</details>

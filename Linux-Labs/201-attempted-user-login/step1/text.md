@@ -9,8 +9,8 @@ Add the number of attempted logins into a file called /root/attempts.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Connect to node01
 
 ```plain
@@ -46,4 +46,3 @@ How many total failed logins were there? Write that out to /root/attempts
 echo 4 > /root/attempts
 ```
  
-</details>

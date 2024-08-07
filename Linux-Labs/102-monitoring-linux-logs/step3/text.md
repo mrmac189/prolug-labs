@@ -9,8 +9,8 @@ Ensure that Promtail is running correctly.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Create the directory where we will install Promtail.
 
@@ -61,4 +61,3 @@ systemctl status promtail.service --no-pager
 ps -ef | grep [p]romtail
 ```
 
-</details>

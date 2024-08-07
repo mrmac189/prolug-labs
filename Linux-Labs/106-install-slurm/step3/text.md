@@ -9,8 +9,8 @@ Run a batch job against one node.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Schedule a job to run against one node.
 
@@ -60,4 +60,3 @@ cat /root/result.txt
 
 What is the output and was it expected from the node(s) that this executed on?
 
-</details>

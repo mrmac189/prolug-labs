@@ -3,8 +3,8 @@ You have installed Slurm on two nodes and started the daemon. You want to verify
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Run the command scontrol show config to see the state of the cluster. What information is important to see here?
 ```plain
@@ -35,4 +35,3 @@ sinfo -N l
 
 If you are confident that you cluster is running properly, you can move on to the next stage, which is running simple and batch type jobs against the cluster.
 
-</details>

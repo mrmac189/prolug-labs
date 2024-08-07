@@ -5,8 +5,8 @@ Install Slurm and have the appropriate daemons running.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Update your apt repository.
 
@@ -88,7 +88,7 @@ ss -ntulp | grep -i slurm
 Once this is complete, you have stood up a Slurm cluster of 2 nodes, and you can begin to test in the next section.
 
 
-</details>
+
 
 
 

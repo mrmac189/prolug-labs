@@ -9,8 +9,8 @@ Find specific versions of the software that the security team has been asking ab
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check all the kernel information.
 
 ```plain
@@ -45,4 +45,3 @@ client is named openssh-client
 
 server is named openssh-server
 
-</details>

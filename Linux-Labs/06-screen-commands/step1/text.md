@@ -9,8 +9,8 @@ Create multiple screen windows, rename them, and move between them.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Verify your /root/.screenrc file
 
 ```plain
@@ -54,4 +54,3 @@ Ctrl A + A
 ```
 
  
-</details>

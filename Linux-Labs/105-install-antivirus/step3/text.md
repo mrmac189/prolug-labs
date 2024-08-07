@@ -9,8 +9,8 @@ Set the script to run via cron at least daily.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Set the script file to be executable.
 
@@ -82,4 +82,3 @@ crontab -l
 
 Hit submit to see your lab results.
 
-</details>

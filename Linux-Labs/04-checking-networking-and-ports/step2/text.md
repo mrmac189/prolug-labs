@@ -6,8 +6,8 @@ Can you find sshd and containerd listening on your system? If you can, write yes
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check what ports are open on your system.
 
 ```plain
@@ -57,4 +57,3 @@ Verify that you no longer see containerd running or the port open on the system.
 ss -ntulp | grep containerd
 ```
 
-</details>

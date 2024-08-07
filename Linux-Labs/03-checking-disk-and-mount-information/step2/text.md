@@ -7,8 +7,8 @@ Echo the name of the file that defines all the mount points into /root/mountinfo
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check what partition the root (/) filesystem is mounted from.
 
 ```plain
@@ -52,4 +52,3 @@ Remember to put the file that the system uses to mount the disks into /root/moun
 echo "/etc/fstab" > /root/mountinfo
 ```
 
-</details>

@@ -11,8 +11,8 @@ Write the default route out to a file called /root/default.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check your ip address
 
 ```plain
@@ -62,4 +62,3 @@ Ping the default gateway 3 times and verify that you get a response back
 ping -c3 `ip route | grep -i default | awk '{print $3}'`
 ```
 
-</details>

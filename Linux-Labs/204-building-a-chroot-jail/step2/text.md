@@ -11,8 +11,8 @@ Copy in the right environment files and home directory that allow a user session
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Copy over the system files.
 
 Inspect sudoers file.
@@ -74,4 +74,3 @@ cp -r /lib/x86_64-linux-gnu/*nss* /var/chroot/lib/x86_64-linux-gnu/
 
 You've set up your environment so hit submit to move on and test.
 
-</details>

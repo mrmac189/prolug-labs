@@ -7,8 +7,8 @@ Verify Loki is running and exposing port 3100.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Create the directory where we will install Loki
 
 ```plain
@@ -68,4 +68,3 @@ systemctl status loki.service --no-pager
 ss -ntulp | grep 3100
 ```
 
-</details>

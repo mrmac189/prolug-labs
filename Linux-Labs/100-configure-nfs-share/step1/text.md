@@ -9,8 +9,8 @@ Verify that the system is being shared out
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Connect to node01
 
 ```plain
@@ -75,4 +75,3 @@ Remember to move back to controlplane node
 exit
 ```
 
-</details>

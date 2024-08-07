@@ -11,8 +11,8 @@ Use the Solution to follow along and look around a new Linux system for the firs
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 First we check what version of Linux we're on.
 
 ```plain
@@ -38,4 +38,3 @@ cat /proc/cmdline
 ```
 
 
-</details>

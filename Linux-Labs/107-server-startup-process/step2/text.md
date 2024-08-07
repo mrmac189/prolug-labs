@@ -11,8 +11,8 @@ What exposed ports do you see and what software are listening on those ports?
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Let's start by looking at everything the kernel did from the time it was first called.
 
@@ -115,4 +115,3 @@ ls -l /etc/ssh
 
 What is the server and what is the client configurations? What are some of the other files in there?
 
-</details>

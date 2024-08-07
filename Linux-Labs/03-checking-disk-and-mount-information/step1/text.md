@@ -9,8 +9,8 @@ Echo the number of partitions of that disk into /root/partitions
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check disk information and count partitions
 
 ```plain
@@ -37,4 +37,3 @@ echo 1 > /root/disks
 echo 3 > /root/partitions
 ```
 
-</details>

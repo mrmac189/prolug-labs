@@ -9,8 +9,8 @@ Remove the packages that should not be there and then verify they are gone.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check for containerd, if it is installed and running on your system.
 
 ```plain
@@ -50,4 +50,3 @@ which bzip2
 If these are removed, you've cleaned up your system to meet the new requirements.
 
 
-</details>

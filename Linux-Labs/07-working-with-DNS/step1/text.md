@@ -9,8 +9,8 @@ Do a traceroute to 8.8.8.8 and 1.1.1.1.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Use the host command to www.google.com
 
 ```plain
@@ -48,4 +48,3 @@ traceroute www.google.com
 What output do you see? Are all of the addresses shown? Why do you think that is? What's the highest latency you see between hops?
 
 
-</details>

@@ -10,8 +10,8 @@ Create a dashboard that shows the telemetry information for your server from Inf
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Connect to Grafana and log in {{TRAFFIC_HOST1_3000}}
 
@@ -29,4 +29,4 @@ Choose the sample query of "Filter by Value".
 
 Verify the dashboard is working properly.
 
-</details>
+

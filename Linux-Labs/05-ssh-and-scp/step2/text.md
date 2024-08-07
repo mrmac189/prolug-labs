@@ -11,8 +11,8 @@ Pull /etc/crontab from node01 to controlplane as file /tmp/node01.crontab
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Verify the file you have at /root/motd
 
 ```plain
@@ -63,4 +63,3 @@ cksum /tmp/node01.crontab
 ```
 
 
-</details>

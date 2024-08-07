@@ -11,8 +11,8 @@ Verify that the web page is working.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Connect to node01
 
 ```plain
@@ -70,4 +70,3 @@ curl node01:80
  
 Did you see the default webpage? Ok, you've set up the first part, let's see what else out team has for us in the next part.
 
-</details>

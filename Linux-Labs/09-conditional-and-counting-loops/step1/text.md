@@ -7,8 +7,8 @@ Create a conditional loop to count to 10, with various different starting and en
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Create a while loop to conditionally check cpu resources every 5 seconds until you break it.
 
 ```plain
@@ -41,4 +41,3 @@ What happened with this count? Did it count the way you expected? How can you mo
 
 What are some things you notice about using a conditional loop? I want you to think about them as we move over into counting loops so you can contrast how they work.
 
-</details>

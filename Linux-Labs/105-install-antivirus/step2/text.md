@@ -7,8 +7,8 @@ Scan your system for vulnerabilities.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Stop clamav-freshclam so that you can update manually.
 
@@ -47,4 +47,3 @@ cat /var/log/clamav/clamav.log
 
 With all of these steps complete we're ready to move on to the automation piece.
 
-</details>

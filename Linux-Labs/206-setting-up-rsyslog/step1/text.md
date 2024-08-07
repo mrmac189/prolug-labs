@@ -15,8 +15,8 @@ Verify that the logs are sending data from node01 to controlplane.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Verify that rsyslog is installed and running on both systems.
 
 ```plain
@@ -99,4 +99,4 @@ tail -f /var/log/syslog
 
 You are ready to head to the next part of the lab.
 
-</details>
+

@@ -9,8 +9,8 @@ Ensure that Prometheus is running correctly.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 
 Setup your server for Prometheus install
 
@@ -79,4 +79,3 @@ You can also access prometheus via this link:
 
 {{TRAFFIC_HOST1_9090}}
 
-</details>

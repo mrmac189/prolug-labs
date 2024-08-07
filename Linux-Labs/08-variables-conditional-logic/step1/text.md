@@ -9,8 +9,8 @@ Output those variables to the screen
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Check your environmental variables
 
 ```plain
@@ -96,4 +96,3 @@ The trick is quite interesting:
 There is an alternative for that syntax as well:
 - ` ps -ef | grep -i sshd | grep -v grep `
 
-</details>

@@ -3,8 +3,8 @@ Your Security Operations team has informed you that an alert for sudo activity h
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 User logging may take up to 60 seconds to execute and populate the logs for this. If you cannot easily wait 60 seconds, push this command
 
 ```plain
@@ -45,4 +45,3 @@ crontab -l
 
 You can see that root is using baduser account to attempt sudo commands that it doesn't yet have permissions to execute.
 
-</details>

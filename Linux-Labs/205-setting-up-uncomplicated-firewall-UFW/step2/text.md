@@ -11,8 +11,8 @@ Verify from controlplane that you can now connect on port 80 to node01.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Install the apache2 web server and verify it is running.
 
 ```plain
@@ -79,4 +79,3 @@ What did you see when it connected?
 
 Was it the default apache web page?
 
-</details>

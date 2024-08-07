@@ -10,8 +10,8 @@ Verify that the logs are being written correctly for controlplane and node01.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 Create a log filter on controlplane
 
 ```plain
@@ -48,4 +48,4 @@ tail -f /var/log/syslog
 
 Hit ctrl + c to quit that tail of the file.
 
-</details>
+

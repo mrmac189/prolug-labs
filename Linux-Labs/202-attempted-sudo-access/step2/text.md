@@ -5,8 +5,8 @@ Give sudo permissions to the user baduser.
 <br>
 
 ### Solution
-<details>
-<summary>Solution</summary>
+
+
 There are many ways to give sudo permissions. You can add them directly to the /etc/sudoers file. You can add them to their own files in /etc/sudoers.d/ directory. We're just going to inspect the current sudoers and then put the user in a group that was already set up to give them sudoers permissions..
 
 Inspect sudoers file.
@@ -62,4 +62,3 @@ If you want to fix their new 'sudo auth' issue, you have to give baduser a passw
 passwd baduser
 ```
 
-</details>
