@@ -17,10 +17,11 @@ What are you seeing here? Is this system under high memory usage or not?
 - `vmstat` command with `delay` and `count` parameters show virtual memory usage. It would be better to use also `-S m` to show info in megabytes.
 - short said, virtual memory is RAM + swap combined together as OS abstraction for processes
 	- `free -h` shows how much memory is free in a simple manner  
+- System is not under high memory usage.
 
 Output:
 ```plain
-$ vmstat 1 5 -S m
+# vmstat 1 5 -S m
 
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
@@ -30,8 +31,7 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
 
 - **procs**:
     - `r` (run queue): 0 - Number of processes waiting for CPU time. 
-    - `b` (blocked): 0 - Number of processes in uninterruptible sleep. 
-	    - uninterruptible sleep is waiting for an I/O operation to complete
+    - `b` (blocked): 0 - Number of processes in uninterruptible sleep (waiting for an I/O operation to complete) 
 - **memory**:
     - `swpd` (swap used): 0 - No swap space is in use. 
     - `free` (free memory): 254 MB - The amount of free physical RAM available. 
@@ -56,19 +56,47 @@ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
     - `st` (steal time): 0% - Percentage of CPU time stolen from a virtual machine by the hypervisor. 
 	    - This is not applicable in a non-virtualized environment but would indicate virtualization overhead if present (the problem of many VMs taking resources from each other).
 
+
+
+
 #### CPU usage
 Next we check the overall CPU usage of the system every second for 5 seconds.
 
 ```plain
 mpstat 1 5
 ```
+- `mpstat`  outputs activities for each available processor, processor 0 being the first one,  with `delay` and `count` parameters in that case. 
 
 Is this system under high CPU load or not? 
+- System is not under high load, but it can be seen, that hypervisor steals some CPU time from VM, however it doesn't really matter since idle is almost 100%. 
+
 ```plain
-14:22:27     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+# mpstat 1 5
+Linux 5.4.0-131-generic (ubuntu)        08/09/24        _x86_64_        (1 CPU)
+
+1:00:31     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+1:00:32     all    0.00    0.00    0.00    0.00    0.00    0.00    1.96    0.00    0.00   98.04
 ...
-Average:     all    0.00    0.20    0.20    0.00    0.00    0.00    0.00    0.00    0.00   99.60
+1:00:35     all    0.00    0.00    0.00    0.00    0.00    0.00    6.67    0.00    0.00   93.33
+Average:     all    0.00    0.00    0.19    0.00    0.00    0.00    3.11    0.00    0.00   96.69
 ```
+- **CPU**: The CPU being reported on. "all" means aggregated values for all CPUs.
+- **%usr**: Percentage of CPU utilization that occurred while executing at the user level (application).
+- **%nice**: Percentage of CPU utilization that occurred while executing at the user level with nice priority.
+	- the more nicer process is, the more kindly he gives his resources to others, niceness can value from -20 til 19
+- **%sys**: Percentage of CPU utilization that occurred while executing at the system level (kernel).
+- **%iowait**: Percentage of time the CPU was idle during which the system awaited disk I/O request.
+- **%irq**: Percentage of time spent servicing hardware interrupts.
+	- Signals sent to the CPU by hardware devices, such as keyboards.
+		- For example: when a key is pressed, a signal is sent to the CPU to process the it.
+- **%soft**: Percentage of time spent servicing software interrupts.
+	- Can be system calls, exceptions from some software.
+- **%steal**: Percentage of time spent in involuntary wait by the virtual CPU or CPUs while the hypervisor was servicing another virtual processor.
+	- Average steal is 3.11, that suggests some resource contention in the virtualized environment 
+- **%guest**: Percentage of time spent running a virtual CPU for guest operating systems.
+- **%gnice**: Percentage of time spent running a niced guest.
+- **%idle**: Percentage of time the CPU or CPUs were idle and the system did not have an outstanding disk I/O request.
+
 
 #### Running processes
 Next we check what processes are running on the system

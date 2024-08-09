@@ -42,6 +42,9 @@ Next we might want to know how long the system has been up.
 uptime
 ```
  - Command `uptime` gives us information about how long the system has been running, the current time, the number of users currently logged in, and the system load averages for the past 1, 5, and 15 minutes.
+ - `w` is similar with user list
+ - `/proc/uptime` file has the info as well
+
 
 #### Boot parameters
 Next we might want to see how the system booted and what kernel parameters were passed when the system was started.
